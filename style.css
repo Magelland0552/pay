@@ -391,13 +391,7 @@
     color: #cbd5e1;
 }
         
-        .footer-content {
-             display: flex;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-            color: #0cc1b8;
-        }
+        
         
         .footer-column h3 {
             font-size: 1.2rem;
@@ -419,7 +413,7 @@
         }
         
         .footer-column a:hover {
-            color: rgb(7, 95, 68);
+            color: rgb(77,87,888);
         }
         
         .social-links {
