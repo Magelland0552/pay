@@ -413,16 +413,17 @@
         }
         
         .footer-column a:hover {
-            color: rgb(77,87,888);
+            color: rgb(77,87,8);
         }
         
         .social-links {
             display: flex;
-            gap: 15px;
+            gap: 20px;
+               
         }
         
         .social-links a {
-            color: rgb(8, 154, 93);
+            color: rgb(8, 154, 8883);
             font-size: 1.2rem;
         }
         
