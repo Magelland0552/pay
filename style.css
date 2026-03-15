@@ -377,6 +377,19 @@
             color: #e70f0f;
             padding: 50px 0 20px;
         }
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #6384b6;
+    color: #cbd5e1;
+}
         
         .footer-content {
              display: flex;
