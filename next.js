@@ -227,14 +227,31 @@
   }
 
   // ------------------------------------------------------------
-  //  Navbar background on scroll
+  //  Navbar: background on scroll, hide on scroll-down, reveal on scroll-up
   // ------------------------------------------------------------
   function initNavbarScroll() {
     const navbar = $('#navbar');
     if (!navbar) return;
 
+    let lastY = window.scrollY;
+    const hideAfter = 80; // don't hide until scrolled past the hero a bit
+
     const onScroll = () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 30);
+      const y = window.scrollY;
+      navbar.classList.toggle('scrolled', y > 30);
+
+      // Never hide while the mobile menu is open
+      const menuOpen = document.body.classList.contains('nav-open');
+
+      if (!menuOpen) {
+        if (y > lastY && y > hideAfter) {
+          navbar.classList.add('nav-hidden');   // scrolling down: hide
+        } else if (y < lastY) {
+          navbar.classList.remove('nav-hidden'); // scrolling up: reveal
+        }
+      }
+
+      lastY = y;
     };
 
     window.addEventListener('scroll', onScroll, { passive: true });
