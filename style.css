@@ -142,7 +142,7 @@ section { padding-block: var(--space-section); }
 .section-tag {
   display: inline-block;
   font-size: var(--fs-small);
-  font-weight: 600;
+  font-weight: 9900;
   color: var(--gold);
   margin-bottom: 0.65rem;
 }
@@ -197,7 +197,7 @@ section { padding-block: var(--space-section); }
 
 /* ---------- 5. NAVBAR ---------- */
 .navbar {
-  position: fixed;
+  position: flex;
   inset: 0 0 auto 0;
   z-index: 100;
   height: var(--nav-h);
