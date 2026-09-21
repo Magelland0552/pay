@@ -2,40 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>MAGELLAND EnT — Affordable Data. Anytime. Anywhere.</title>
+  <!-- viewport-fit=cover handles notched phones; no maximum-scale so users can still zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050B14">
+  <title>MAGELLAND EnT — Affordable Data Bundles in Ghana</title>
+  <meta name="description" content="Buy affordable MTN, Telecel and AirtelTigo data bundles from MAGELLAND EnT. Fast, simple and available any time.">
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Main Stylesheet -->
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Ambient background glow -->
-  <div class="ambient-glow glow-1"></div>
-  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
 
   <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="logo">
-        <span class="logo-mark">M</span>
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true">M</span>
         <span class="logo-text">MAGELLAND<span class="logo-accent"> EnT</span></span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
+
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#bundles">Bundles</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#" class="buy-btn-nav" id="navBuyBtn">
-          Buy Data <i class="fas fa-arrow-up-right-from-square"></i>
+        <a href="https://www.apisolution.net/agent?ref=120587" class="buy-btn-nav" id="navBuyBtn" target="_blank" rel="noopener">
+          Buy data <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </a>
       </div>
     </div>
@@ -45,50 +53,52 @@
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
-        <div class="hero-pill">
-          <span class="pulse-dot"></span>𝗡𝗼𝘄 𝘀𝗲𝗿𝘃𝗶𝗻𝗴 𝗮𝗹𝗹 𝗻𝗲𝘁𝘄𝗼𝗿𝗸𝘀 𝗶𝗻 𝗚𝗵𝗮𝗻𝗮
-        </div>
-        <h1>
-          Stay <span class="gradient-text">Connected.</span><br>
-          Spend <span class="gradient-text">Less.</span>
-        </h1>
-        <p class="hero-sub">Get affordable data bundles quickly and easily with MAGELLAND EnT. Instant access, no stress.</p>
+        <p class="hero-pill">
+          <span class="pulse-dot" aria-hidden="true"></span>Now serving all networks in Ghana
+        </p>
+
+        <h1>Stay <span class="gradient-text">connected.</span><br>Spend <span class="gradient-text">less.</span></h1>
+
+        <p class="hero-sub">Affordable MTN, Telecel and AirtelTigo data bundles from MAGELLAND EnT. Pick a bundle, tap buy, and you're back online.</p>
+
         <div class="hero-buttons">
-          <a href=" https://www.apisolution.net/agent?ref=120587 " class="btn btn-primary" id="heroBuyBtn">
-            Buy Data Now <i class="fas fa-arrow-right"></i>
+          <a href="https://www.apisolution.net/agent?ref=120587" class="btn btn-primary" id="heroBuyBtn" target="_blank" rel="noopener">
+            Buy data now <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
-          <a href="#bundles" class="btn btn-ghost">View Bundles</a>
+          <a href="#bundles" class="btn btn-ghost">See bundles</a>
         </div>
+
         <div class="hero-stats">
           <div class="stat">
-            <strong>3+</strong>
-            <span>Networks</span>
+            <strong>3</strong>
+            <span>Networks covered</span>
           </div>
-          <div class="stat-divider"></div>
+          <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat">
             <strong>24/7</strong>
-            <span>Available</span>
+            <span>Order any time</span>
           </div>
-          <div class="stat-divider"></div>
+          <div class="stat-divider" aria-hidden="true"></div>
           <div class="stat">
-            <strong>100%</strong>
-            <span>Reliable</span>
+            <strong>90 days</strong>
+            <span>Bundle validity</span>
           </div>
         </div>
       </div>
+
       <div class="hero-visual">
         <div class="visual-card">
           <div class="visual-header">
-            <div class="visual-dots">
+            <div class="visual-dots" aria-hidden="true">
               <span></span><span></span><span></span>
             </div>
-            <span class="visual-label">Live Data</span>
+            <span class="visual-label">Live coverage</span>
           </div>
           <div class="visual-body">
-            <div class="signal-wave">
+            <div class="signal-wave" aria-hidden="true">
               <i class="fas fa-wifi"></i>
             </div>
-            <div class="visual-bars">
+            <div class="visual-bars" aria-hidden="true">
               <div class="vbar" style="--h: 40%"></div>
               <div class="vbar" style="--h: 65%"></div>
               <div class="vbar" style="--h: 85%"></div>
@@ -96,17 +106,11 @@
               <div class="vbar" style="--h: 75%"></div>
               <div class="vbar" style="--h: 95%"></div>
             </div>
-            <div class="visual-footer">
-              <span>MTN • Telecel • AirtelTigo</span>
-            </div>
+            <p class="visual-footer">MTN &bull; Telecel &bull; AirtelTigo</p>
           </div>
         </div>
-        <div class="floating-badge badge-1">
-          <i class="fas fa-bolt"></i> Fast
-        </div>
-        <div class="floating-badge badge-2">
-          <i class="fas fa-shield-halved"></i> Secure
-        </div>
+        <span class="floating-badge badge-1"><i class="fas fa-bolt" aria-hidden="true"></i> Fast</span>
+        <span class="floating-badge badge-2"><i class="fas fa-shield-halved" aria-hidden="true"></i> Secure</span>
       </div>
     </div>
   </section>
@@ -115,13 +119,16 @@
   <section class="bundles-section" id="bundles">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">Data Plans</span>
-        <h2 class="section-title">Choose Your Data Bundle</h2>
-        <p class="section-sub">Affordable packages for every network. Click buy now to complete your purchase on our secure platform.</p>
+        <span class="section-tag">Data plans</span>
+        <h2 class="section-title">Choose your bundle</h2>
+        <p class="section-sub">Prices are in Ghana cedis. Tap buy now and you'll finish the purchase on our secure platform.</p>
       </div>
+
       <div class="bundle-grid" id="bundleGrid">
-        <!-- JS injects bundle cards -->
+        <!-- Bundle cards are built by next.js from the CONFIG list -->
       </div>
+
+      <p class="bundle-note">Need a different size? Message us on WhatsApp and we'll sort you out.</p>
     </div>
   </section>
 
@@ -129,25 +136,26 @@
   <section class="why-section" id="about">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">Why Us</span>
+        <span class="section-tag">Why us</span>
         <h2 class="section-title">Why MAGELLAND EnT</h2>
-        <p class="section-sub">We make staying connected simple, fast and affordable.</p>
+        <p class="section-sub">Staying connected shouldn't be complicated or expensive.</p>
       </div>
+
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-tags"></i></div>
-          <h3>Affordable</h3>
-          <p>Get competitive data bundle prices that fit your pocket.</p>
+          <div class="feature-icon"><i class="fas fa-tags" aria-hidden="true"></i></div>
+          <h3>Prices that fit</h3>
+          <p>Competitive bundle prices on every network we carry.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
-          <h3>Fast</h3>
-          <p>Quick and simple access to your data — no delays.</p>
+          <div class="feature-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+          <h3>Quick to buy</h3>
+          <p>A few taps from picking a bundle to getting back online.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
-          <h3>Reliable</h3>
-          <p>A convenient way to stay connected wherever you are.</p>
+          <div class="feature-icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
+          <h3>Someone to ask</h3>
+          <p>A real person on WhatsApp if anything goes wrong with an order.</p>
         </div>
       </div>
     </div>
@@ -158,24 +166,25 @@
     <div class="container">
       <div class="section-head">
         <span class="section-tag">Process</span>
-        <h2 class="section-title">How It Works</h2>
-        <p class="section-sub">Get your data in three easy steps.</p>
+        <h2 class="section-title">How it works</h2>
+        <p class="section-sub">Three steps, start to finish.</p>
       </div>
+
       <div class="steps-grid">
         <div class="step-card">
           <div class="step-num">01</div>
-          <h3>Choose a Bundle</h3>
-          <p>Select your preferred network and data package.</p>
+          <h3>Pick a bundle</h3>
+          <p>Choose your network and the data size you need.</p>
         </div>
         <div class="step-card">
           <div class="step-num">02</div>
-          <h3>Click Buy Now</h3>
-          <p>You will be taken to our secure purchase platform.</p>
+          <h3>Tap buy now</h3>
+          <p>You'll be taken to our secure purchase platform.</p>
         </div>
         <div class="step-card">
           <div class="step-num">03</div>
-          <h3>Complete Purchase</h3>
-          <p>Finish the transaction on the external platform.</p>
+          <h3>Pay and go</h3>
+          <p>Complete the payment and your data is on its way.</p>
         </div>
       </div>
     </div>
@@ -185,32 +194,35 @@
   <section class="contact-section" id="contact">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">Reach Out</span>
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-sub">We're here to help you stay connected.</p>
+        <span class="section-tag">Reach out</span>
+        <h2 class="section-title">Get in touch</h2>
+        <p class="section-sub">Questions about a bundle or an order? We're here.</p>
       </div>
+
       <div class="contact-grid">
         <div class="contact-card">
-          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="contact-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
           <h3>WhatsApp</h3>
-          <a href="https://wa.me/233599641354"" id="whatsappContact" target="_blank">Chat with us</a>
+          <a href="https://wa.me/233599641354" id="whatsappContact" target="_blank" rel="noopener">Chat with us</a>
         </div>
         <div class="contact-card">
-          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
           <h3>Phone</h3>
-          <a href="#" id="phoneContact">+233 XX XXX XXXX</a>
+          <a href="tel:+233599641354" id="phoneContact">+233 59 964 1354</a>
         </div>
         <div class="contact-card">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
           <h3>Email</h3>
-          <a href="imustbrich@yahoo.com" id="emailContact">       gggggggggggggggg</a>
+          <a href="mailto:imustbrich@yahoo.com" id="emailContact">imustbrich@yahoo.com</a>
         </div>
       </div>
+
+      <!-- Replace the # with your real profile links when you have them -->
       <div class="social-icons">
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="#" aria-label="X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
       </div>
     </div>
   </section>
@@ -221,32 +233,33 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="logo">
-            <span class="logo-mark">M</span>
+            <span class="logo-mark" aria-hidden="true">M</span>
             <span class="logo-text">MAGELLAND<span class="logo-accent"> EnT</span></span>
           </div>
-          <p class="footer-tagline">Affordable Data. Anytime. Anywhere.</p>
+          <p class="footer-tagline">Affordable data. Anytime. Anywhere.</p>
         </div>
-        <div class="footer-links">
+        <nav class="footer-links" aria-label="Footer">
           <a href="#home">Home</a>
           <a href="#bundles">Bundles</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-        </div>
+        </nav>
       </div>
-      <div class="footer-copyright">
-        &copy; 2025 MAGELLAND EnT. All rights reserved.
-      </div>
+      <p class="footer-copyright">&copy; <span id="year">2026</span> MAGELLAND EnT. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- ========== FLOATING WHATSAPP ========== -->
-  <a href="https://wa.me/233599641354" class="float-wa" id="floatWhatsapp" target="_blank" aria-label="WhatsApp">
-    <i class="fab fa-whatsapp"></i>
+  <a href="https://wa.me/233599641354" class="float-wa" id="floatWhatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
   </a>
 
-  <!-- Main JavaScript -->
+  <!-- ========== STICKY BUY BAR (phones) ========== -->
+  <div class="mobile-bar">
+    <span class="mobile-bar-label">Bundles from<br>GH&#8373;4.50</span>
+    <a href="https://www.apisolution.net/agent?ref=120587" class="btn btn-primary" id="barBuyBtn" target="_blank" rel="noopener">Buy data now</a>
+  </div>
+
   <script src="next.js"></script>
 </body>
-</html>     
-
-     
+</html>
