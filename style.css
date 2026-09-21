@@ -152,7 +152,7 @@ section { padding-block: var(--space-section); }
 .section-sub {
   color: var(--text-mid);
   max-width: 52ch;
-}
+} 
 
 .gradient-text {
   background: linear-gradient(100deg, var(--gold-bright), var(--gold-dim));
